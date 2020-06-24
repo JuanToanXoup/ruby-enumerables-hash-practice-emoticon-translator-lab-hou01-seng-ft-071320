@@ -2,9 +2,10 @@
 require 'yaml'
 require 'pry'
 
-file = "./lib/emoticons.yml"
+
 
 def load_library
+  file = "./lib/emoticons.yml"
   result = file.each_with_object({}) do |(key, value), final_hash|
       if !final_hash[key]
         final_hash[key] = {
