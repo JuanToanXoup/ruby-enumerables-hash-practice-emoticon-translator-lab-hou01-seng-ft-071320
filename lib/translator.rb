@@ -4,7 +4,7 @@ require 'pry'
 yaml_file = "lib/emoticons.yml"
 def load_library
   emoticon_library = YAML.load_file('lib/emoticons.yml')
-  emoticon_library.each_with_object({}) do |(key, value), final_hash|
+  result = emoticon_library.each_with_object({}) do |(key, value), final_hash|
     #binding.pry
     value.each do |index|
       #binding.pry
@@ -13,7 +13,7 @@ def load_library
       #binding.pry
       end
     end
-    final_hash
+    result
   end
   binding.pry
 end
