@@ -11,8 +11,8 @@ def load_library
           :japanese => value[1]
         }
       end
-    result
   end
+  result
 end
 
 def get_japanese_emoticon
