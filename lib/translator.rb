@@ -8,6 +8,10 @@ def load_library
     binding.pry
     value.each do |index|
       binding.pry
+      if !final_hash[key]
+        final_hash[key] = {}
+      binding.pry
+      end
     end
     final_hash
   end
