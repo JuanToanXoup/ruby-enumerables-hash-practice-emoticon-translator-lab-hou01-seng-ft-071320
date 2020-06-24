@@ -4,7 +4,7 @@ require 'pry'
 
 file = "./lib/emoticons.yml"
 
-def load_library(file)
+def load_library
   result = file.each_with_object({}) do |(key, value), final_hash|
       if !final_hash[key]
         final_hash[key] = {
