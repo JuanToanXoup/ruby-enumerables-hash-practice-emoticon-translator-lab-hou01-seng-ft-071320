@@ -2,10 +2,10 @@
 require 'yaml'
 require 'pry'
 
-emoticon_library = YAML.load_file('lib/emoticons.yml')
+file = YAML.load_file('lib/emoticons.yml')
 
-def load_library
-  result = emoticon_library.each_with_object({}) do |(key, value), final_hash|
+def load_library(file)
+  result = file.each_with_object({}) do |(key, value), final_hash|
       if !final_hash[key]
         final_hash[key] = {
           :english => value[0],
