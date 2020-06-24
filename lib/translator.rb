@@ -7,10 +7,10 @@ def load_library
   emoticon_library.each_with_object({}) do |(key, value), final_hash|
     binding.pry
     value.each do |index|
-      binding.pry
+      #binding.pry
       if !final_hash[key]
         final_hash[key] = {}
-      binding.pry
+      #binding.pry
       end
     end
     final_hash
