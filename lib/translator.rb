@@ -10,8 +10,8 @@ def load_library
       #binding.pry
       if !final_hash[key]
         final_hash[key] = {
-          :english => index,
-          :japanese => index
+          :english => index[0],
+          :japanese => index[1]
         }
       end
     end
