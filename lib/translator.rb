@@ -9,8 +9,10 @@ def load_library
     value.each do |index|
       #binding.pry
       if !final_hash[key]
-        final_hash[key] = {}
-      #binding.pry
+        final_hash[key] = {
+          :english => index,
+          :japanese => index
+        }
       end
     end
     result
