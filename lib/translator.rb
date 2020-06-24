@@ -13,7 +13,6 @@ def load_library
       end
     result
   end
-  binding.pry
 end
 
 def get_japanese_emoticon
@@ -23,4 +22,3 @@ end
 def get_english_meaning
   # code goes here
 end
-binding.pry
